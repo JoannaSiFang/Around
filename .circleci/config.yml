@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t JoannaSiFang/around .
+          docker build -t sifang95/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
           docker push sifang95/around
